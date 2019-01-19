@@ -1,0 +1,1 @@
+const projData = require('./data');
