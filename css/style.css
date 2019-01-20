@@ -2,6 +2,11 @@
 /* font-family: 'Oswald', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
 
+#wrapper-body {
+    width: 100%;
+    height: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -9,76 +14,80 @@ h4,
 h5 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
+    color: #333;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-}
-
-/* Virtual Body */
-#wrapper-body {
-    width: 100%;
-    height: 100vh;
+    color: #333;
 }
 
 /* Button Properties */
+
 a {
-    color: #222;
-    font-size: 3em;
+    color: #333;
+    font-size: 2.25em;
 }
 
 a:hover {
-    color: orange;
+    color: goldenrod;
 }
 
 div #btn-panel {
-    border: .1em solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    height: auto;
-    margin: 1em auto;
+    height: 3em;
+    margin: 3.5em auto;
+    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
+
+/* Header Section Properties */
 
 header {
     width: 100%;
     min-height: 100vh;
-    border: 0.5em solid #fff;
+    height: 100%;
 }
 
 header .header-bg {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url('../assets/images/rick-mason-532835-unsplash.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 header .wrap-header {
-    border: 0.1em solid red;
-    width: 90%;
+    border: 0.33em solid #fff;
+    width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     margin: 0 auto;
-    /* padding: 2em 0.5em; */
+    /* padding: 0.25em 0.25em; */
 }
 
 header .wrap-header h1 {
-    /* border: 0.1em solid red; */
-    font-size: 4.5em;
-    margin-top: 25%;
-}
-
-header .wrap-header h3 {
-    /* border: .1em solid red; */
-    font-size: 1.3em;
-    margin-bottom: 2em;
+    font-size: 2.5em;
+    margin-top: 2.75em;
+    margin-bottom: 0.15em;
 }
 
 header h5 {
@@ -94,5 +103,4 @@ main {
     width: 100%;
     min-height: 100vh;
     border: 0.5em solid #333;
-    border-radius: 0.25em;
 }
