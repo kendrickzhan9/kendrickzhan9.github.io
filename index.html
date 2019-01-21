@@ -11,7 +11,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -21,21 +20,46 @@
             <div class="wrap-header">
                 <h1>Kendrick Zhang</h1>
                 <h3>Software Engineer : &lt;Web Developer /&gt;</h3>
-                <div id="btn-panel">
-                    <a href="https://github.com/kennyzhan9?tab=repositories" target="_blank" rel="noopener noreferrer"
-                        class="btn"><i class="fab fa-github-square"></i></a>
-                    <a href="https://www.linkedin.com/in/kendrickzhang/" target="_blank" rel="noopener noreferrer"
-                        class="btn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="btn"><i class="fab fa-codepen"></i></a>
-                    <a href="#" class="btn"><i class="fas fa-envelope-square"></i></a>
-                    <a href="#" class="btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn"><i class="fab fa-medium"></i></a>
-                </div>
+                <div class="btn-panel"></div>
                 <h5>please scroll &darr;</h5>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section id="section-about">
+                <h1>Hello World!</h1>
+                <div class="wrap-about">
+                    <p>
+                        I'm a web developer based in New York City. When I'm not immersed in my code editor, I'm
+                        usually
+                        exercising, eating, and thinking about where to travel. I love building web applications with
+                        intuitive designs and amazing functionalities.
+                    </p>
+                    <p>
+                        If you're looking to start a project, or for someone to join your development team, feel free
+                        to
+                        contact me and let's build something amazing together!
+                    </p>
+                    <div class="btn-tabs">
+                        <a href="#section-projects" class="btn">Projects</a>
+                        <a href="#main-footer" class="btn">Contact</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-projects">
+                <h1>Projects</h1>
+                <div id="contain-projects"></div>
+            </section>
+        </main>
+        <footer id="main-footer">
+            <div class="wrap-footer">
+                <h1>Contact Me</h1>
+                <div class="btn-panel"></div>
+                <h5>Coded by Kendrick Zhang | 2019</h5>
+            </div>
+        </footer>
     </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
