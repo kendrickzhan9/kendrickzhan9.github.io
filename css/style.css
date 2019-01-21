@@ -1,11 +1,8 @@
+/* Font Properties */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
 /* font-family: 'Oswald', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
-
-#wrapper-body {
-    width: 100%;
-    height: 100%;
-}
 
 h1,
 h2,
@@ -24,6 +21,7 @@ p {
 }
 
 /* Button Properties */
+
 a {
     color: #333;
     font-family: 'Oswald', sans-serif;
@@ -35,7 +33,6 @@ a:hover {
 }
 
 div .btn-panel {
-    /* border: 1px solid red; */
     width: 100%;
     height: 3em;
     margin: 3.5em auto;
@@ -68,12 +65,31 @@ div.wrap-footer div a:hover {
     color: #999;
 }
 
+/* Body Propeties */
+
+#wrapper-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header,
+footer {
+    flex: 1;
+}
+
+main {
+    flex: auto;
+}
+
 /* Header Section Properties */
 
 header {
     width: 100%;
     min-height: 100vh;
-    height: 100%;
 }
 
 header .header-bg {
@@ -130,22 +146,28 @@ main {
     margin: 0 auto;
 }
 
-/* About Section Properties */
-main #section-about {
+/* About, Projects Section Properties */
+
+main #section-about,
+main #section-projects {
     width: 100%;
     height: 100%;
-    margin: 1.5em auto;
+    /* margin-top: 1.5em auto; */
 }
 
-main #section-about h1 {
+main #section-about h1,
+main #section-projects h1 {
     width: 90%;
     height: auto;
     background: #333;
     color: #fff;
+    letter-spacing: 0.1em;
     margin: 1em auto;
     padding: 1em;
     border-radius: 0.25em;
 }
+
+/* About Section Properties */
 
 main #section-about .wrap-about {
     width: 90%;
@@ -161,32 +183,17 @@ main #section-about .wrap-about p {
 }
 
 /* Projects Section Properties */
-main #section-projects {
-    width: 100%;
-    height: 100%;
-    margin: 1.5em auto;
-}
-
-main #section-projects h1 {
-    width: 90%;
-    height: auto;
-    background: #333;
-    color: #fff;
-    margin: 1em auto;
-    padding: 1em;
-    border-radius: 0.25em;
-}
 
 main #section-projects #contain-projects {
-    margin: 2em 0.5em;
+    margin: 1.5em 0.5em;
     padding: 0 0.5em;
 }
 
 main #contain-projects .proj-tile {
     border: 0.1em solid #333;
     border-radius: 0.35em;
-    margin: 3em auto;
-    padding: 1.25em 0.5em;
+    margin: 2.5em auto;
+    padding: 1.25em 1em;
 }
 
 main #contain-projects .proj-tile img {
@@ -197,6 +204,7 @@ main #contain-projects .proj-tile img {
 }
 
 /* Footer Section Properties */
+
 footer {
     width: 100%;
     min-height: 42vh;
