@@ -5,7 +5,20 @@
 }
 
 @media (min-width: 700px) {
-    body {
-        display: none;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .wrap-header,
+    .wrap-about,
+    .wrap-projects,
+    .wrap-footer {
+        grid-column: 2/4;
+    }
+
+    #section-about h1,
+    #section-projects h1 {
+        grid-column: 2/4;
     }
 }
