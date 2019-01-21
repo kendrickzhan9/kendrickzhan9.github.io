@@ -16,9 +16,4 @@
     .wrap-footer {
         grid-column: 2/4;
     }
-
-    #section-about h1,
-    #section-projects h1 {
-        grid-column: 2/4;
-    }
 }

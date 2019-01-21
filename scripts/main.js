@@ -33,6 +33,49 @@ const kzProjectsData = [
     },
 ];
 
+const projContainer = document.getElementById('contain-projects');
+
+const renderProjects = (stuff) => {
+    stuff.forEach((proj) => {
+        const projTile = document.createElement('div');
+        projTile.classList.add('proj-tile');
+
+        const projHeader = document.createElement('h2');
+        projHeader.innerHTML = `${proj.name}`;
+
+        const projImg = document.createElement('img');
+        projImg.setAttribute('src', `${proj.img}`);
+
+        const projBtns = document.createElement('div');
+        projBtns.setAttribute('class', 'btn-tabs');
+
+        const projHost = document.createElement('a');
+        projHost.classList.add('btn');
+        projHost.setAttribute('href', `${proj.host}`);
+        projHost.setAttribute('target', `${proj.target}`);
+        projHost.setAttribute('rel', `${proj.rel}`);
+        projHost.innerHTML = 'View App';
+
+        const projRepo = document.createElement('a');
+        projRepo.classList.add('btn');
+        projRepo.setAttribute('href', `${proj.repo}`);
+        projRepo.setAttribute('target', `${proj.target}`);
+        projRepo.setAttribute('rel', `${proj.rel}`);
+        projRepo.innerHTML = 'View Code';
+
+        projTile.appendChild(projHeader);
+        projTile.appendChild(projImg);
+        projTile.appendChild(projBtns);
+        projBtns.appendChild(projHost);
+        projBtns.appendChild(projRepo);
+        
+
+        projContainer.appendChild(projTile);
+    });
+}
+
+renderProjects(kzProjectsData);
+
 const btnPanel = [
     {
         site: 'github-square',
@@ -77,49 +120,6 @@ const btnPanel = [
         fa: '<i class="fab fa-medium"></i>'
     }
 ];
-
-const projContainer = document.getElementById('contain-projects');
-
-const renderProjects = (stuff) => {
-    stuff.forEach((proj) => {
-        const projTile = document.createElement('div');
-        projTile.classList.add('proj-tile');
-
-        const projHeader = document.createElement('h2');
-        projHeader.innerHTML = `${proj.name}`;
-
-        const projImg = document.createElement('img');
-        projImg.setAttribute('src', `${proj.img}`);
-
-        const projBtns = document.createElement('div');
-        projBtns.setAttribute('class', 'btn-tabs');
-
-        const projHost = document.createElement('a');
-        projHost.classList.add('btn');
-        projHost.setAttribute('href', `${proj.host}`);
-        projHost.setAttribute('target', `${proj.target}`);
-        projHost.setAttribute('rel', `${proj.rel}`);
-        projHost.innerHTML = 'View App';
-
-        const projRepo = document.createElement('a');
-        projRepo.classList.add('btn');
-        projRepo.setAttribute('href', `${proj.repo}`);
-        projRepo.setAttribute('target', `${proj.target}`);
-        projRepo.setAttribute('rel', `${proj.rel}`);
-        projRepo.innerHTML = 'View Code';
-
-        projTile.appendChild(projHeader);
-        projTile.appendChild(projImg);
-        projTile.appendChild(projBtns);
-        projBtns.appendChild(projHost);
-        projBtns.appendChild(projRepo);
-        
-
-        projContainer.appendChild(projTile);
-    });
-}
-
-renderProjects(kzProjectsData);
 
 const btnContainers = document.querySelectorAll('.btn-panel');
 
