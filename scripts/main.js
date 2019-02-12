@@ -93,28 +93,28 @@ const btnPanel = [
     },
     {
         site: 'copepen',
-        href: '',
+        href: 'https://codepen.io/kenstructor/',
         target: '_target',
         rel: 'noopener noreferrer',
         fa: '<i class="fab fa-codepen"></i>'
     },
     {
         site: 'envelope-square',
-        href: '',
+        href: 'mailto:kendrickzhan9@gmail.com',
         target: '_target',
         rel: 'noopener noreferrer',
         fa: '<i class="fas fa-envelope-square"></i>'
     },
     {
         site: 'twitter',
-        href: '',
+        href: 'https://twitter.com/kenstructor',
         target: '_target',
         rel: 'noopener noreferrer',
         fa: '<i class="fab fa-twitter"></i>'
     },
     {
         site: 'medium',
-        href: '',
+        href: 'https://medium.com/@kenstructor',
         target: '_target',
         rel: 'noopener noreferrer',
         fa: '<i class="fab fa-medium"></i>'
