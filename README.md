@@ -2,6 +2,6 @@
 
 ### Portfolio Site
 
-#### [https://kendrickzhan9.github.io/](https://kendrickzhan9.github.io/)
+#### [https://kendrickzhang.github.io/](https://kendrickzhang.github.io/)
 
 ##### rev. Jan 2019
