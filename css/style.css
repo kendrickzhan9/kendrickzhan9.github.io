@@ -82,7 +82,9 @@ header {
 
 header .header-bg {
     width: auto;
+    max-width: 100%;
     height: auto;
+    max-height: 100%;
     background: url('../assets/images/rick-mason-532835-unsplash.jpg');
     background-attachment: fixed;
     background-position: center;
